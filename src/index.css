@@ -1,13 +1,25 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+@import url(../src/App.css);
+@import url(../src/utils/normalize.css);
+/* HEADER */
+@import url(../src/blocks/header/header.css);
+@import url(../src/blocks/header/__menu/header__menu.css);
+@import url(../src/blocks/header/__icons/header__icons.css);
+@import url(../src/blocks/header/__icon/header__icon.css);
+@import url(../src/blocks/header/__categories/header__categories.css);
+@import url(../../netflix-clone/src/blocks/header/__categorie/header__categorie.css);
+/* HIGHLIGHT */
+@import url(../../netflix-clone/src/blocks/highlight/highlight.css);
+@import url(../../netflix-clone/src/blocks/highlight/__header/highlight__header.css);
+@import url(../src/blocks/highlight/__img/highlight__img.css);
+@import url(../src/blocks/highlight/__description/highlight__description.css);
+@import url(../src/blocks/highlight/__slogan/highlight__slogan.css);
+@import url(../src/blocks/highlight/__text/highlight__text.css);
+@import url(../src/blocks/highlight/__header/_small/highlight__header_small.css);
+@import url(../src/blocks/highlight/__header/_big/highlight__header_big.css);
+@import url(../src/blocks/highlight/__button/highlight__button.css);
+@import url(../src/blocks/highlight/__button/_opacity/highlight__button_opacity.css);
+@import url(../src/blocks/highlight/__button/_light/highlight__button_light.css);
+@import url(../src/blocks/highlight/__url/highlight__url.css);
+@import url(../src/blocks/highlight/__url/_light/highlight__url_light.css);
+@import url(../src/blocks/highlight/__url/_dark/highlight__url_dark.css);
+@import url(../src/blocks/highlight/__button-container/highlight__button-container.css);

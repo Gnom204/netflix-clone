@@ -1,0 +1,5 @@
+.highlight__button_opacity {
+  background-color: rgba(255, 255, 255, 0.3);
+  position: relative;
+  max-width: 280px;
+}
