@@ -2,22 +2,10 @@ import React, { useEffect, useState } from "react";
 import HighlightMovie from "../HighlightMovie/HighlightMovie";
 import { getRandomFilms } from "../../utils/api";
 
-export default function Main({
-  nameRu,
-  description,
-  coverUrl,
-  slogan,
-  webUrl,
-}) {
+export default function Main({ randomFilm, premieres }) {
   return (
     <main className="main">
-      <HighlightMovie
-        nameRu={nameRu}
-        description={description}
-        coverUrl={coverUrl}
-        slogan={slogan}
-        webUrl={webUrl}
-      />
+      <HighlightMovie randomFilm={randomFilm} premieres={premieres} />
     </main>
   );
 }

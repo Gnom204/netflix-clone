@@ -2,30 +2,28 @@ import React, { useState } from "react";
 import play from "../../source/images/Play.svg";
 import detail from "../../source/images/Detail.svg";
 import PopularSlider from "../PopularSlider/PopularSlider";
-export default function HighlightMovie({
-  nameRu,
-  description,
-  coverUrl,
-  slogan,
-  webUrl,
-}) {
+export default function HighlightMovie({ randomFilm, premieres }) {
   return (
     <div className="highlight">
-      <img src={coverUrl} className="highlight__img" alt="Огромная картинка" />
+      <img
+        src={randomFilm.posterUrlPreview}
+        className="highlight__img"
+        alt="Огромная картинка"
+      />
 
       <div className="highlight__text">
         <h1
           className={
             "highlight__header " +
-            (/\s/.test(nameRu) <= 1
+            (/\s/.test(randomFilm.nameRu) <= 1
               ? "highlight__header_small"
               : "highlight__header_big")
           }
         >
-          {nameRu.toUpperCase()}
+          {randomFilm.nameRu.toUpperCase()}
         </h1>
-        <p className="highlight__slogan">{slogan}</p>
-        <p className="highlight__description">{description}</p>
+        <p className="highlight__slogan">{randomFilm.slogan}</p>
+        <p className="highlight__description">{randomFilm.description}</p>
         <div className="highlight__button-container">
           <button className="highlight__button highlight__button_light">
             <img src={play} alt="смотреть" />
@@ -38,7 +36,7 @@ export default function HighlightMovie({
             <a
               className="highlight__url highlight__url_light"
               target="_blank"
-              href={webUrl}
+              href={randomFilm.webUrl}
               rel="noopener noreferrer"
             >
               Подробнее
@@ -46,7 +44,7 @@ export default function HighlightMovie({
           </button>
         </div>
         <h2>Популярное на Netflix</h2>
-        <PopularSlider />
+        <PopularSlider premieres={premieres.items} />
       </div>
     </div>
   );

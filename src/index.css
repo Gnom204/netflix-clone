@@ -1,5 +1,6 @@
 @import url(../src/App.css);
 @import url(../src/utils/normalize.css);
+@import url(../src/utils/animation.css);
 /* HEADER */
 @import url(../src/blocks/header/header.css);
 @import url(../src/blocks/header/__menu/header__menu.css);
@@ -23,3 +24,10 @@
 @import url(../src/blocks/highlight/__url/_light/highlight__url_light.css);
 @import url(../src/blocks/highlight/__url/_dark/highlight__url_dark.css);
 @import url(../src/blocks/highlight/__button-container/highlight__button-container.css);
+/* POSTER */
+@import url(../src/blocks/poster/poster.css);
+@import url(../src/blocks/poster/__name/poster__name.css);
+@import url(../src/blocks/poster/__img/poster__img.css);
+/* SLIDER */
+@import url(../src/blocks/slider/slider.css);
+@import url(../src/blocks/slider/__list/slider__list.css);
